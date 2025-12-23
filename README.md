@@ -1,5 +1,7 @@
 # pt-slim-fast
-The script `pt-slim-fast.sh` removes some 3rd party integrations and demo material from a fresh Pro Tools install, then starts the Avid Link Uninstaller. See code for details.
+The zsh script `pt-slim-fast.sh` removes some 3rd party integrations and demo material from a fresh Pro Tools install, then starts the Avid Link Uninstaller. See code for details.
+
+macOS only.
 
 ## how to run
 
@@ -16,4 +18,4 @@ It's okay to run it with normal user rights - it just won't be able to delete so
 /absolute/path/to/scriptfile
 ```
 
-Tested with PT 2025.10 and 2025
+Tested with PT 2025.10 and 2025.12
