@@ -1,11 +1,5 @@
 #!/bin/zsh
 
-# This script removes 3rd party integrations and demo material from a fresh Pro Tools install
-# and starts the Avid Link Uninstaller.
-# To remove all files, it has to run with admin privileges (sudo).
-# Use at your own risk.
-
-
 # check if Pro Tools is running
 if [[ -n $(pgrep -x "Pro Tools") ]]; then
     echo "Please quit Pro Tools Application before runninge this script."
@@ -43,14 +37,14 @@ rm -rf "/usr/local/share/soundflow" && \
 rm -rf "/usr/local/share/soundflow" && echo "done"
 
 
-# DEMO MATERIAL
+## DEMO MATERIAL
 
 echo -n "removing demo stuff... "
 rm -rf "$HOME/Documents/Pro Tools/Demo Sessions" && \
 rm -rf "$HOME/Documents/Pro Tools/Demo Sketches" && echo "done"
 
 
-# # AVID LINK
+## AVID LINK
 
 echo -n "quitting Avid Link... "
 osascript -e 'if application "Avid Link" is running then tell application "Avid Link" to quit' &> /dev/null
