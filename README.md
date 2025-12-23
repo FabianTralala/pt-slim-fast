@@ -5,7 +5,7 @@ macOS only.
 
 ## how to run
 
-Download the repo or copy the script code into a new text file.
+Clone the repo or copy the script code into a new text file.
 Don't forget to set the executable flag:
 ```
 chmod +x path/to/scriptfile
